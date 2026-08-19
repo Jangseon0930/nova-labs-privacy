@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 이중자막 (유튜브 언어학습)</title>
+<meta name="description" content="크롬 확장 '이중자막 — 유튜브 언어학습'의 개인정보처리방침. 서버가 없으며 어떤 개인정보도 수집하지 않습니다.">
+<style>
+  :root {
+    --ink: #1a1d24; --muted: #5b6270; --rule: #e2e5ea;
+    --bg: #ffffff; --card: #f6f7f9; --accent: #1f5fd4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e6e9ef; --muted:#9aa3b2; --rule:#2a2f3a; --bg:#12141a; --card:#1a1d24; --accent:#7aa7ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+          "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 6rem; }
+  h1 { font-size: 1.75rem; line-height: 1.3; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.75rem 0 .75rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .5rem; color: var(--accent); }
+  .sub { color: var(--muted); margin: 0 0 .25rem; }
+  .date { color: var(--muted); font-size: .875rem; margin: 0 0 2.5rem; }
+  .lead {
+    background: var(--card); border-radius: .6rem; padding: 1.1rem 1.25rem;
+    margin: 0 0 1rem; border-left: 3px solid var(--accent);
+  }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: .85rem; }
+  code {
+    background: var(--card); padding: .1rem .35rem; border-radius: .25rem;
+    font: .875em/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  .note { color: var(--muted); font-size: .95rem; }
+  hr.lang { border: 0; border-top: 3px double var(--rule); margin: 4.5rem 0 3rem; }
+  a { color: var(--accent); }
+  footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>개인정보처리방침</h1>
+<p class="sub"><strong>이중자막 — 유튜브 언어학습</strong> (크롬 확장)</p>
+<p class="date">최종 수정일: 2026-08-17</p>
+
+<p class="lead"><strong>이 확장은 서버가 없습니다.</strong> 개발자는 여러분에 대해 아무것도 수집하지 않고, 받지 않으며, 볼 수 없습니다.</p>
+
+<h2>1. 기기에 저장하는 것</h2>
+<p>아래 두 가지를 <strong>여러분의 브라우저 안에만</strong> 저장합니다 (<code>chrome.storage.local</code>). 개발자에게 전송되지 않고, 다른 기기와 동기화되지 않습니다.</p>
+<table>
+  <tr><th>저장하는 것</th><th>왜</th></tr>
+  <tr><td>자막 표시 켜기/끄기 설정</td><td>껐다 켠 상태를 다음에도 기억하려고</td></tr>
+  <tr><td>찾아본 영어 단어의 뜻</td><td>같은 단어를 다시 눌렀을 때 또 조회하지 않으려고</td></tr>
+</table>
+<p class="note">단어 뜻은 한 번 찾으면 계속 남습니다. 뜻을 찾지 못한 단어는 “없음”으로 기억해서 같은 요청을 반복하지 않습니다.</p>
+
+<h2>2. 밖으로 나가는 요청</h2>
+<p>이 확장은 두 곳에만 요청을 보냅니다. <strong>둘 다 개발자 서버가 아닙니다.</strong></p>
+
+<h3>위키낱말사전 (en.wiktionary.org)</h3>
+<p>여러분이 자막의 단어를 <strong>눌렀을 때만</strong>, 그 단어 하나를 보내 뜻을 받아옵니다.</p>
+<ul>
+  <li>보내는 것: <strong>단어 하나</strong>뿐입니다 (예: <code>come</code>)</li>
+  <li>함께 보내지 <strong>않는 것</strong>: 로그인 정보, 쿠키, 기기 식별자, 보고 있는 영상 주소</li>
+  <li>이미 찾아본 단어는 저장된 것을 쓰므로 요청이 나가지 않습니다</li>
+</ul>
+<p class="note"><strong>알아두실 점:</strong> 어떤 단어를 눌렀는지는 위키낱말사전 쪽 서버 기록에 남을 수 있습니다. 이는 그 사이트의 정책을 따릅니다. 여러분이 누구인지는 함께 가지 않습니다.</p>
+
+<h3>유튜브 (youtube.com)</h3>
+<p>영상의 자막 파일을 가져옵니다. 유튜브 페이지 안에서 일어나는 요청이라 <strong>이미 로그인되어 있는 유튜브 세션이 그대로 사용됩니다.</strong> 이 확장이 로그인 정보를 읽거나 저장하거나 전송하지는 않습니다.</p>
+
+<h2>3. 수집하지 않는 것</h2>
+<p>다음은 <strong>일절 수집하지 않습니다.</strong></p>
+<ul>
+  <li>이름, 이메일, 전화번호, 주소 등 개인을 식별할 수 있는 정보</li>
+  <li>위치 정보</li>
+  <li>어떤 영상을 봤는지에 대한 기록</li>
+  <li>유튜브 외 다른 사이트의 방문 기록</li>
+  <li>광고 식별자, 추적 쿠키</li>
+  <li>결제 정보</li>
+</ul>
+<p><strong>분석 도구나 추적 코드를 넣지 않았습니다.</strong> 몇 명이 쓰는지도 개발자는 모릅니다.</p>
+
+<h2>4. 제3자 제공</h2>
+<p><strong>없습니다.</strong> 판매하지 않고, 공유하지 않고, 광고에 쓰지 않습니다. 애초에 개발자가 받는 데이터가 없습니다.</p>
+
+<h2>5. 권한을 왜 요구하는가</h2>
+<table>
+  <tr><th>권한</th><th>쓰는 곳</th></tr>
+  <tr><td><code>storage</code></td><td>위 1번의 설정과 단어 뜻을 기기에 저장</td></tr>
+  <tr><td><code>*://*.youtube.com/*</code></td><td>유튜브 영상 위에 자막을 표시하고 자막 파일을 가져옴</td></tr>
+  <tr><td><code>https://en.wiktionary.org/*</code></td><td>누른 단어의 뜻을 조회</td></tr>
+</table>
+<p><strong>이 세 가지 외의 권한은 요구하지 않습니다.</strong> 다른 웹사이트에서는 아무 동작도 하지 않습니다.</p>
+
+<h2>6. 저장된 것을 지우는 방법</h2>
+<p>크롬에서 확장을 삭제하면 저장된 설정과 단어 뜻이 함께 사라집니다.</p>
+<p><code>chrome://extensions</code> → 이 확장 → <strong>삭제</strong></p>
+
+<h2>7. 어린이 정보</h2>
+<p>이 확장은 어린이를 대상으로 특별히 설계되지 않았으며, 나이를 묻거나 저장하지 않습니다. 애초에 개인정보를 수집하지 않으므로 어린이의 개인정보도 수집하지 않습니다.</p>
+
+<h2>8. 방침이 바뀌면</h2>
+<p>이 문서를 수정하고 위의 최종 수정일을 갱신합니다. 수집하는 항목이 늘어나는 변경이라면 확장 업데이트 시 알립니다.</p>
+
+<h2>9. 문의</h2>
+<p><strong>jangseon365@gmail.com</strong></p>
+<p class="note">확장 사용 중 문제가 있거나 개인정보 관련 문의가 있으면 이 주소로 연락 주세요.</p>
+
+<hr class="lang">
+
+<h1>Privacy Policy</h1>
+<p class="sub"><strong>Dual Subtitles — YouTube Language Learning</strong> (Chrome Extension)</p>
+<p class="date">Last updated: 2026-08-17</p>
+
+<p class="lead"><strong>This extension has no server.</strong> The developer collects nothing, receives nothing, and can see nothing about you.</p>
+
+<h2>1. Stored on your device</h2>
+<p>Two things are kept in your browser only (<code>chrome.storage.local</code>). Neither is transmitted to the developer, and neither syncs across devices.</p>
+<ul>
+  <li><strong>Subtitle on/off setting</strong> — so your choice persists</li>
+  <li><strong>Definitions of words you looked up</strong> — cached so the same word is not fetched twice</li>
+</ul>
+
+<h2>2. Outbound requests</h2>
+<p>Only two destinations, <strong>neither owned by the developer</strong>.</p>
+<p><strong>Wiktionary (en.wiktionary.org)</strong> — When you click a word in the subtitles, that single word is sent to retrieve its definition. No credentials, cookies, device identifiers, or video URL are sent with it. Words already looked up are served from local storage and produce no request.</p>
+<p class="note">Note: which words you clicked may appear in Wiktionary's own server logs, governed by their policy. Nothing identifying you is sent along.</p>
+<p><strong>YouTube (youtube.com)</strong> — Subtitle files are fetched. Because this happens inside the YouTube page, your existing YouTube session is used. The extension does not read, store, or transmit your login credentials.</p>
+
+<h2>3. Not collected</h2>
+<p>No personally identifiable information, location, watch history, browsing history outside YouTube, advertising identifiers, tracking cookies, or payment information. <strong>No analytics or tracking code is included.</strong></p>
+
+<h2>4. Third parties</h2>
+<p>None. Nothing is sold, shared, or used for advertising. There is no data to share.</p>
+
+<h2>5. Permissions</h2>
+<ul>
+  <li><code>storage</code> — save the setting and cached definitions on your device</li>
+  <li><code>*://*.youtube.com/*</code> — display subtitles and fetch subtitle files</li>
+  <li><code>https://en.wiktionary.org/*</code> — look up clicked words</li>
+</ul>
+<p>No other permissions are requested. The extension does nothing on other websites.</p>
+
+<h2>6. Deleting your data</h2>
+<p>Remove the extension at <code>chrome://extensions</code> and all stored data is deleted with it.</p>
+
+<h2>7. Children</h2>
+<p>Not directed at children, and no age information is requested or stored. Since no personal information is collected at all, none is collected from children.</p>
+
+<h2>8. Changes</h2>
+<p>This document will be updated and the date above revised. Changes that expand what is collected will be announced with the extension update.</p>
+
+<h2>9. Contact</h2>
+<p><strong>jangseon365@gmail.com</strong></p>
+
+<footer>Nova Labs · 이중자막 (Dual Subtitles)</footer>
+
+</main>
+</body>
+</html>
